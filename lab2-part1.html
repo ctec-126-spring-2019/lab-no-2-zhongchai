@@ -33,6 +33,38 @@
         // be sure to assign the roman numeral to the variable romanNumeral
         // it will be used to display it on the web page using the code below
 
+        // prompt user to enter a number, and attempt to change the input into an integer
+        let input = parseInt(prompt("Please enter a number between 1-10.", ""));
+
+        // prompts another input if previous input is not a number, or if it's less than 1 or greater than 10
+        while (isNaN(input) || input < 1 || input > 10) {
+            input = parseInt(prompt("Error! Please enter a number between 1-10.", ""));
+        }
+
+        // checks to see which number is inputted then assign the matching roman numeral
+        if (input == 1) {
+            romanNumeral = "I";
+        } else if (input == 2) {
+            romanNumeral = "II";
+        } else if (input == 3) {
+            romanNumeral = "III";
+        } else if (input == 4) {
+            romanNumeral = "IV";
+        } else if (input == 5) {
+            romanNumeral = "V";
+        } else if (input == 6) {
+            romanNumeral = "VI";
+        } else if (input == 7) {
+            romanNumeral = "VII";
+        } else if (input == 8) {
+            romanNumeral = "VIII";
+        } else if (input == 9) {
+            romanNumeral = "IX";
+        } else if (input == 10) {
+            romanNumeral = "X";
+        } else {
+            romanNumeral = "Error";
+        }
 
 
         // do not modify start
